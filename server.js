@@ -3,8 +3,10 @@
  * the verification process may break
  * ***************************************************/
 
-"use strict";
+//"use strict";
 
+var bGround = require("fcc-express-bground");
+var myApp = require("./myApp");
 var fs = require("fs");
 var express = require("express");
 var app = express();
@@ -61,6 +63,7 @@ app.use(function (err, req, res, next) {
 });
 
 //Listen on port set in environment variable or default to 3000
-const listener = app.listen(process.env.PORT || 3000, function () {
-	console.log("Node.js listening on port " + listener.address().port);
+var port = process.env.PORT || 3000;
+bGround.setupBackgroundApp(app, myApp, __dirname).listen(port, function () {
+	bGround.log("Node.js listening on port " + port + "...");
 });

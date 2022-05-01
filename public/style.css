@@ -1,10 +1,10 @@
 /****** Main Styling ******/
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	color: #222;
-	background-color: #ECF0F1;
+	background-color: #ecf0f1;
 	text-align: center;
 }
 
@@ -25,8 +25,18 @@ ul {
 }
 
 a {
-	color: #2574A9;
+	color: #2574a9;
 }
+
+h1 {
+	font-size: 4em;
+}
+
+input[type="text"],
+label {
+	margin-bottom: 8px;
+}
+
 /****** Logo Div Styling ******/
 
 img {
