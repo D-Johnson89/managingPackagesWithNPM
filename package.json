@@ -1,7 +1,7 @@
 {
 	"author": "Dustin Johnson",
 	"name": "fcc-learn-npm-package-json",
-	"description": "backend course from freecodecamp.org"
+	"description": "backend course from freecodecamp.org",
 	"dependencies": {
 		"express": "^4.14.0"
 	},
