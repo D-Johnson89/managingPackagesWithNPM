@@ -2,6 +2,11 @@
 	"author": "Dustin Johnson",
 	"name": "fcc-learn-npm-package-json",
 	"description": "backend course from freecodecamp.org",
+	"keywords": [
+		"freecodecamp",
+		"back end",
+		" learn to program"
+	],
 	"dependencies": {
 		"express": "^4.14.0"
 	},
