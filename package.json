@@ -3,6 +3,7 @@
 	"name": "fcc-learn-npm-package-json",
 	"license": "MIT",
 	"description": "backend course from freecodecamp.org",
+	"version": "1.0",
 	"keywords": [
 		"freecodecamp",
 		"back end",
