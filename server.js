@@ -33,9 +33,9 @@ if (!process.env.DISABLE_XORIGIN) {
 	});
 }
 
-/*app.use("/public", express.static(process.cwd() + "/public"));
+app.use("/public", express.static(__dirname + "/public"));
 
-app.route("/_api/package.json").get(function (req, res, next) {
+/*app.route("/_api/package.json").get(function (req, res, next) {
 	console.log("requested");
 	fs.readFile(__dirname + "/package.json", function (err, data) {
 		if (err) return next(err);
