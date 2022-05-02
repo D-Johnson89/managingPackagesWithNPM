@@ -62,6 +62,10 @@ app.use(function (err, req, res, next) {
 	}
 });*/
 
+app.get("/", function (req, res) {
+	res.send("Hello Express");
+});
+
 //Listen on port set in environment variable or default to 3000
 var port = process.env.PORT || 3000;
 bGround.setupBackgroundApp(app, myApp, __dirname).listen(port, function () {
