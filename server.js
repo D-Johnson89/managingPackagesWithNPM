@@ -33,8 +33,6 @@ if (!process.env.DISABLE_XORIGIN) {
 	});
 }
 
-app.use("/public", express.static(__dirname + "/public"));
-
 /*app.route("/_api/package.json").get(function (req, res, next) {
 	console.log("requested");
 	fs.readFile(__dirname + "/package.json", function (err, data) {
@@ -61,10 +59,6 @@ app.use(function (err, req, res, next) {
 			.send(err.message || "SERVER ERROR");
 	}
 });*/
-
-app.get("/", function (req, res) {
-	res.sendFile(__dirname + "/views/index.html");
-});
 
 //Listen on port set in environment variable or default to 3000
 var port = process.env.PORT || 3000;
